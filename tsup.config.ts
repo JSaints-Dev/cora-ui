@@ -1,7 +1,12 @@
 import {defineConfig} from 'tsup';
 
 export default defineConfig({
-  entry: ['src/index.ts'],
+  entry: [
+    'src/**/*.{ts,tsx}',
+    '!src/**/*.stories.{ts,tsx}',
+    'tailwind.config.ts',
+    'src/index.css'
+  ],
   minify: true,
   sourcemap: true,
   clean: true,
