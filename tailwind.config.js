@@ -1,8 +1,15 @@
+/* eslint-disable no-undef */
+const content = ['./src/**/*.{ts,tsx,js,jsx}'];
+
+if (process.env.NODE_ENV === 'production') {
+  content.push('!./src/**/*.stories.tsx');
+}
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ['class'],
   safelist: ['dark'],
-  content: ['./index.html', './src/**/*.{ts,tsx,js,jsx}'],
+  content,
   theme: {
     extend: {
       borderRadius: {
