@@ -9,9 +9,12 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 344 100.0% 53.2%;
+    --primary: 0 0% 23%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
+    --brand-primary: 342, 99%, 71%;
+    --color-main: 342, 99%, 71%;
+    --brand-dark: 342, 69%, 49%;
+    --secondary: 210, 33%, 95%;
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
@@ -27,7 +30,21 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
+
+    --color-dark-main: 342, 69%, 49%;
+    --color-white: 0, 0%, 100%;
+    --color-gray: 210, 5%, 44%;
+    --color-light-gray: 0, 0%, 87%;
+    --color-lighter-gray: 210, 33%, 95%;
+    --color-error: 0, 85%, 58%;
+    --color-success: 156, 96%, 34%;
+    --color-black: 0, 0%, 23%;
+    --text-accent: 204, 83%, 47%;
+    --text-default: var(--color-gray);
+    --text-black: var(--color-black);
+
+    --font-family: "Roboto", sans-serif;
   }
   .dark {
     --background: 240 10% 3.9%;
