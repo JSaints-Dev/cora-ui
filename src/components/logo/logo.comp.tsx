@@ -1,6 +1,4 @@
-export type LogoProps = React.SVGProps<SVGSVGElement> & {
-  variant?: 'default' | 'full';
-}
+import { LogoProps } from './logo.types';
 
 export function Logo({variant = 'default', ...props}: LogoProps) {
   return variant === 'default' ? (
@@ -22,8 +20,6 @@ export function Logo({variant = 'default', ...props}: LogoProps) {
     </svg>
   ) : (
     <svg
-      width="100%"
-      height="100%"
       viewBox="0 0 160 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
